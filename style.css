@@ -1,0 +1,1085 @@
+@font-face {
+	font-family: 'PobedaBold';
+	src: url('fonts/Pobeda-Bold.eot');
+	src: local('Pobeda Bold'), local('Pobeda-Bold'),
+		url('fonts/Pobeda-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Pobeda-Bold.woff') format('woff'),
+		url('fonts/Pobeda-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pobeda';
+	src: url('fonts/Pobeda-Regular.eot');
+	src: local('Pobeda Regular'), local('Pobeda-Regular'),
+		url('fonts/Pobeda-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Pobeda-Regular.woff') format('woff'),
+		url('fonts/Pobeda-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	src: url('fonts/pfagorasanspro-reg.eot');
+	src: local('PFAgoraSansPro Regular'), local('PFAgoraSansPro-Regular'),
+		url('fonts/pfagorasanspro-reg.eot?#iefix') format('embedded-opentype'),
+		url('fonts/pfagorasanspro-reg.woff') format('woff'),
+		url('fonts/pfagorasanspro-reg.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans-Regular'),
+        url(fonts/open-sans.woff) format('woff'),
+        url(fonts/open-sans.ttf) format('truetype');
+}
+
+@font-face{
+	font-family: 'CirceRegular';
+	src: url('fonts/Circe-Regular.eot');
+	src: url('fonts/Circe-Regular.eot?iefix') format('eot'),
+	url('fonts/Circe-Regular.woff') format('woff'),
+	url('fonts/Circe-Regular.ttf') format('truetype'),
+	url('fonts/Circe-Regular.svg#webfont') format('svg');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+input:focus, textarea:focus{
+	outline: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-shadow: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html{
+
+}
+
+body{
+	color: #063c4c;
+	font-size: 14px;
+	font-family: 'PobedaBold';
+	line-height: 1;
+}
+
+a{
+	color: #000;
+
+}
+
+a:hover{
+	color: #000 ;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear{
+	clear: both;
+}
+
+h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 21px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-image: url(images/hor_line.jpg);
+	margin-bottom: 40px;
+}
+/*-----------------Карта------------------*/
+.ymaps{
+	padding: 60px 0;
+	background-image: url(images/maps.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+
+.show__map{
+	display: block;
+	width: 270px;
+	margin: 0 auto;
+	border: 1px solid #bca26c;
+	text-align: center;
+	color: #bca36c;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	background-color: #fff;
+	text-transform: uppercase;
+	padding: 21px 0;
+	transition-duration: 0.5s;
+	text-decoration: none;
+}
+
+.show__map:hover{
+	text-decoration: none;
+	color: #bca36c;
+	background-color: #e3e3e3;
+}
+
+.footer{
+	padding: 38px 0;
+}
+
+.wrapper{
+	max-width: 1320px;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.social{
+	float: left;
+	overflow: hidden;
+}
+
+.social li{
+	float: left;
+	margin-right: 15px;
+}
+
+.social li:last-child{
+	margin-right: 0;
+}
+
+.copyright{
+	text-align: center;
+	font-family: 'PFAgoraSansPro';
+	font-size: 12px;
+	width: 348px;
+	margin: 0 auto;
+}
+
+#to__top{
+	display: block;
+	float: right;
+	width: 40px;
+	height: 23px;
+	background-image: url(images/to_top.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: -10px;
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background: rgba(0, 0, 0, 0.6);
+	top: 0;
+}
+
+.popup {
+	display: none;
+	width: 100%;
+	max-width: 485px;
+	top: 100px;
+	left: 100px;
+	background-color: #fff;
+	z-index: 999;
+	position: absolute;
+	padding: 38px;
+	border-radius: 4px;
+	border: 2px solid #bca26c;
+}
+
+.close1 {
+	float: right;
+	font-size: 20px;
+	text-decoration: none;
+	color: #bca26c;
+	right: 28px;
+	top: 16px;
+	position: absolute;
+	font-family: Arial;
+}
+
+.close1 :hover{
+	text-decoration: none;
+}
+/*-------------------------Первый экран----------------------*/
+.screen1{
+	position: relative;
+}
+
+.panorama-control{
+	display: none !important;
+}
+
+.screen1__block{
+	float: left;
+	width: 33.3333%;
+	padding: 42px 0;
+}
+
+#nav-toggle {position: relative; display: inline-block; float: left; z-index: 81;}
+#nav-toggle span { position: absolute; left: 0; top: 10px; }
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+	cursor: pointer;
+	height: 2px;
+	width: 45px;
+	background: white;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-toggle span:before {
+	top: -5px;
+}
+
+#nav-toggle span:after {
+	bottom: -5px;
+}
+
+/* Добавим анимацию всех свойств для блоков нашей иконки */
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	transition: all 500ms ease-in-out;
+}
+
+/* Центральный блок делаем прозрачным */
+#nav-toggle.active span {
+	background-color: transparent;
+}
+
+/* Смещаем псевдо-элементы в центр иконки (на место основного блока) */
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+	top: 0;
+}
+
+/* Наклоняем псевдо-элементы под углом 45 градусов, но в разные стороны */
+#nav-toggle.active span:before {
+	transform: rotate(15deg);
+}
+
+#nav-toggle.active span:after {
+	transform: rotate(-15deg);
+}
+
+.city__links{
+	float: left;
+	overflow: hidden;
+	margin-left: 120px;
+}
+
+.city__links li{
+	float: left;
+	margin-right: 15px;
+}
+
+.city__links li:last-child{
+	margin-right: 0;
+}
+
+.city__links li a{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #838b83;
+}
+
+.city__links li a.active{
+	text-decoration: none;
+}
+
+.city__links li a:hover{
+	text-decoration: none;
+}
+
+.logo{
+	display: block;
+	width: 380px;
+	margin: 0 auto;
+}
+
+.logo img{
+	width: 100%;
+}
+
+.lang__links{
+	overflow: hidden;
+	float: left;
+	margin-left: 60px;
+}
+
+.lang__links li{
+	float: left;
+	margin-right: 15px;
+}
+
+.lang__links li a{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #838b83;
+}
+
+.lang__links li a.active{
+	text-decoration: none;
+}
+
+.lang__links li a:hover{
+	text-decoration: none;
+}
+
+.top__right{
+	overflow: hidden;
+}
+
+.top__right__btn{
+	float: right;
+}
+
+.book{
+	display: block;
+	width: 160px;
+	padding: 11px 0;
+	text-align: center;
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.book:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+.free__valet{
+	width: 160px;
+	height: 112px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(images/free_valet.png);
+	float: right;
+	margin-top: 36px;
+}
+
+.menu{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 80;
+	overflow-y: auto;
+	top: -100%;
+}
+
+.menu ul{
+	margin-top: 41px;
+}
+
+.menu ul li{
+	text-align: center;
+	margin-bottom: 37px;
+}
+
+.menu ul li a{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 36px;
+	text-decoration: none;
+}
+
+.menu ul li a:hover{
+	text-decoration: underline;
+}
+
+.menu__book{
+	display: block;
+	width: 745px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	border-top: 1px solid #393939;
+	border-bottom: 1px solid #393939;
+	margin: 0 auto 37px auto;
+	text-align: center;
+	padding: 39px 0;
+	font-size: 36px;
+	transition-duration: 0.5s;
+}
+
+.menu__book:hover{
+	color: #999;
+}
+
+.menu__addr{
+	text-align: center;
+	color: #fff;
+	text-transform: none;
+	font-family: 'PFAgoraSansPro';
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.menu__valet{
+	width: 160px;
+	height: 112px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(images/free_valet.png);
+	margin: 37px auto 0 auto;
+}
+
+.popup__form{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 880;
+	overflow-y: auto;
+	padding: 144px 0;
+	top: 0;
+	left: -100%;
+}
+
+.popup__form__wrapper{
+	width: 750px;
+	margin: 0 auto;
+}
+
+.popup__form__wrapper form{
+	overflow: hidden;
+}
+
+.form__head{
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 36px;
+	margin-bottom: 44px;
+}
+
+.popup__form__left{
+	width: 46%;
+	float: left;
+}
+
+.popup__form__right{
+	width: 46%;
+	float: right;
+}
+
+.popup__form__wrapper form input[type = 'text']{
+	width: 100%;
+	height: 40px;
+	border: none;
+	margin-bottom: 20px;
+	padding: 0 12px;
+	font-size: 18px;
+	font-family: 'PFAgoraSansPro';
+	color: #000;
+}
+
+.popup__form__subscribe{
+	margin: 30px 0;
+}
+
+.popup__form__subscribe input[type = "checkbox"]{
+	display: none;
+}
+
+.popup__form__subscribe label{
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: 'Open Sans';
+	color: #fff;
+	width: 180px;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	background-image: url(images/check.jpg);
+	padding-left: 24px;
+}
+
+.popup__form__subscribe label.check{
+	background-image: url(images/uncheck.jpg);
+}
+
+input.send__book{
+	width: 282px;
+	border: 1px solid #fff;
+	background-color: #3b3b3b;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: 'Open Sans';
+	margin: 0 auto 29px auto;
+	display: block;
+	color: #fff;
+	cursor: pointer;
+	padding: 20px 0;
+}
+
+.policy{
+	text-align: center;
+	color: #fff;
+	font-family: 'PFAgoraSansPro';
+	line-height: 1.5;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #393939;
+	margin-bottom: 37px;
+	word-wrap: break-word;
+}
+
+.hide__form{
+	position: absolute;
+	display: block;
+	left: 64px;
+	top: 40px;
+}
+/*----------------Звездная команда----------------------*/
+.screen2{
+	padding: 65px 0;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(images/waves.jpg);
+}
+
+.star__team__photo img{
+	width: 100%;
+}
+
+.star__team__wrap{
+	max-width: 680px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 9;
+}
+
+.star__team__desc{
+	width: 100%;
+	padding: 52px 0;
+	background-color: #fff;
+	position: relative;
+}
+
+.star__team__desc1{
+	padding: 12px 0 52px 0;
+	background-color: #fff;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	position: relative;
+}
+
+.star__team__desc2{
+	width: 100%;
+	padding: 52px 0;
+	background-color: #fff;
+	position: relative;
+	z-index: 2;
+}
+
+.star__team__desc3{
+	padding: 12px 0 52px 0;
+	background-color: #fff;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	position: relative;
+}
+
+.star__team__desc p, .star__team__desc1 p, .star__team__desc2 p, .star__team__desc3 p{
+	text-align: center;
+	color: #bca36c;
+	font-size: 18px;
+	font-family: 'PFAgoraSansPro';
+	line-height: 1.5;
+}
+
+.screen3{
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	background-image: url(images/mramor.jpg);
+	padding-bottom: 50px;
+}
+
+.screen4{
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	background-image: url(images/mramor.jpg);
+	padding-bottom: 50px;
+}
+
+.screen4 .panorama-viewport{
+	position: relative;
+}
+
+.screen5{
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	background-image: url(images/waves.jpg);
+	padding-bottom: 50px;
+}
+
+.screen3__slider__nav, .screen5__slider__nav{
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	width: 140px;
+	margin: 0 auto 37px auto;
+}
+
+.screen4__slider__nav{
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	width: 453px;
+	margin: 0 auto 37px auto;
+}
+
+.screen3__slider__nav a, .screen5__slider__nav a, .screen4__slider__nav a{
+	display: block;
+	width: 23px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition-duration: 0.5s;
+}
+
+.screen3__slider__nav a:nth-child(1), .screen5__slider__nav a:nth-child(1){
+	background-image: url(images/prev.png);
+	float: left;
+}
+
+.screen4__slider__nav a:nth-child(1){
+	background-image: url(images/prev.png);
+	float: left;
+	margin-right: 60px;
+}
+
+.screen3__slider__nav a:nth-child(1):hover, .screen5__slider__nav a:nth-child(1):hover, .screen4__slider__nav a:nth-child(1):hover{
+	background-image: url(images/prev1.png);
+}
+
+.screen3__slider__nav a:nth-child(2), .screen5__slider__nav a:nth-child(2){
+	background-image: url(images/next.png);
+	float: right;
+}
+
+.screen4__slider__nav a:nth-child(4){
+	background-image: url(images/next.png);
+	float: left;
+}
+
+.screen3__slider__nav a:nth-child(2):hover, .screen5__slider__nav a:nth-child(2):hover, .screen4__slider__nav a:nth-child(4):hover{
+	background-image: url(images/next1.png);
+}
+
+.slider__dots{
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	padding: 0 104px;
+	margin-bottom: 90px;
+}
+
+.slider__dots a{
+	display: block;
+	float: left;
+	margin-right: 9px;
+	height: 4px;
+	width: 59px;
+	background-color: #d4d4d4;
+	margin-bottom: 8px;
+}
+
+.slider__dots a:last-child{
+	margin-right: 0;
+}
+
+.slider__dots a.active{
+	background-color: #000000;
+}
+
+.fade__day{
+	display: block;
+	width: 140px !important;
+	height: 40px !important;
+	float: left;
+	font-size: 16px;
+	color: #fff;
+	font-family: 'CirceRegular';
+	background-repeat: no-repeat;
+	background-image: url(images/day.png);
+	background-size: 40px !important;
+	background-position: 75px top;
+	border-right: 1px solid #fff;
+	padding-top: 12px;
+}
+
+.fade__day:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.fade__night{
+	display: block;
+	width: 102px !important;
+	height: 40px !important;
+	float: left;
+	font-size: 16px;
+	color: #fff;
+	font-family: 'CirceRegular';
+	background-repeat: no-repeat;
+	background-image: url(images/night.png);
+	background-size: 40px !important;
+	background-position: 25px top;
+	padding-top: 12px;
+	border-left: 1px solid #fff;
+	padding-left: 100px;
+}
+
+.fade__night:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.day__panoram{
+	display: none;
+}
+
+.addr__bottom p{
+	text-align: center;
+	font-size: 18px;
+	color: #063c4c;
+	font-family: 'PFAgoraSansPro';
+}
+
+/*----------------Слайдер новостей---------------------------*/
+.screen6{
+	padding: 32px 0px;
+}
+
+.news__item{
+	overflow: hidden;
+}
+
+.news__item__left{
+	float: left;
+	width: 65%;
+}
+
+.news__item__right{
+	float: right;
+	width: 30%;
+}
+
+.news__item__left img{
+	width: 100%;
+}
+
+.news__item__right img{
+	width: 100%;
+}
+/*
+#news__slider .owl-stage-outer{
+	overflow: unset;
+}
+
+.screen6 .wrapper{
+	overflow: unset;
+}
+*/
+.news__item__head{
+	margin-top: 63px;
+	font-size: 30px;
+	font-family: 'PobedaBold';
+}
+
+.news__item__text{
+	margin-top: 13px;
+	margin-bottom: 210px;
+	color: #bca36c;
+	font-family: 'PFAgoraSansPro';
+}
+/*-----------------------------------------------------------*/
+@media(max-width: 1366px){
+	.wrapper{
+		padding: 0 60px;
+		width: auto;
+	}
+/**/
+	.screen6 .wrapper{
+		overflow: hidden;
+	}
+
+	#news__slider .owl-stage-outer{
+		overflow: hidden;
+	}/**/
+}
+
+@media(max-width: 1235px){
+	.city__links{
+		margin-left: 80px;
+	}
+
+	.lang__links{
+		margin-left: 40px;
+	}
+}
+/**/
+@media(max-width: 1199px){
+	.news__item__text{
+		margin-bottom: 90px;
+	}
+}/**/
+/**/
+@media(max-width: 991px){
+	.news__item__head{
+		margin-top: 0;
+	}
+
+	.news__item__text {
+		margin-bottom: 60px;
+	}
+}
+/**/
+@media(max-width: 767px){
+	/**/
+	.news__item__left{
+		width: 55%;
+	}
+
+	.news__item__right{
+		width: 41%;
+	}
+
+	.news__item__text {
+		margin-bottom: 25px;
+	}
+	/**/
+	.menu__book{
+		width: 100%;
+	}
+
+	.popup__form__left, .popup__form__right{
+		float: none;
+		width: 100%;
+		width: 280px;
+		margin: 0 auto;
+	}
+
+	.popup__form__wrapper{
+		width: 100%;
+	}
+
+	.popup__form{
+		padding: 83px 0;
+	}
+
+	.popup__form__wrapper form input[type = 'text']{
+		width: 91%;
+	}
+}
+
+@media(max-width: 1055px){
+	.lang__links{
+		margin-left: 80px;
+	}
+
+	.logo{
+		width: 100%;
+	}
+}
+
+@media(max-width: 680px){
+	.screen1__block{
+		float: none;
+		width: 100%;
+	}
+
+	.lang__links {
+		margin-left: 30px;
+	}
+
+	.top__left{
+		width: 305px;
+		margin: 0 auto;
+	}
+
+	.top__right{
+		padding-top: 0;
+	}
+
+	.top__right__btn{
+		float: none;
+	}
+
+	.book{
+		margin: 0 auto;
+	}
+
+	.free__valet{
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.star__team__wrap{
+		max-width: 450px;
+	}
+
+
+
+
+}
+
+@media(max-width: 540px){
+	.copyright{
+		margin-top: 54px;
+		float: none;
+		width: auto;
+	}
+
+	#to__top{
+		margin-top: -65px;
+	}
+/**/
+	.news__item__right__img{
+		display: none;
+	}
+
+	.news__item__left, .news__item__right{
+		width: 100%;
+		float: none;
+	}
+
+	.news__item__head{
+		margin-top: 10px;
+	}
+	/**/
+}
+
+@media(max-width: 453px){
+	.screen4__slider__nav a:nth-child(1){
+		margin-right: 10px;
+	}
+
+	.fade__night{
+		width: 55px !important;
+		padding-left: 80px;
+	}
+
+	.fade__day{
+		background-position: 54px top;
+		width: 120px !important;
+	}
+
+	.screen4__slider__nav{
+		width: 315px;
+	}
+
+	.slider__dots{
+		margin-bottom: 24px;
+	}
+
+	.screen3{
+		padding-bottom: 0;
+	}
+
+	.screen4{
+		padding-bottom: 0;
+	}
+
+	.star__team__desc1, .star__team__desc3{
+		width: auto;
+		padding: 12px 20px 52px 20px;
+	}
+}
+
+@media(max-width: 417px){
+	#to__top {
+		margin-top: -75px;
+	}
+
+	.wrapper{
+		padding: 0 20px;
+	}
+}
+
+@media(max-width: 400px){
+	.form__head{
+		font-size: 24px;
+	}
+
+	.hide__form{
+		left: 24px;
+		top: 24px;
+	}
+
+	.slider__dots a{
+		width: 35px;
+	}
+}
+
+@media(max-width: 320px){
+	.slider__dots a {
+		width: 20px;
+	}
+}

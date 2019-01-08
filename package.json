@@ -1,0 +1,21 @@
+{
+  "name": "sahalin",
+  "version": "1.0.0",
+  "description": "sahalin project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "sahalin"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "alexander",
+  "license": "ISC",
+  "devDependencies": {
+    "google-closure-compiler-js": "^20180610.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-image": "^4.3.0"
+  }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel = "stylesheet" href = "style.css" />
+    <link rel = "stylesheet" href = "css/jquery.panorama.css" />
+
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.theme.default.css">
+
+    <title>Сахалин - дары морей и океанов</title>
+</head>
+<id =>
+
+<div class = "overlay"></div>
+
+<div class="popup map-pp">
+    <a class="close1" href="#">X</a>
+    <div id = "map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8c4c5cde946fea3dbb8542210561c4c5429618db55a3606eee6e8a3726c7c0aa&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+</div>
+
+<div class = "menu">
+    <ul>
+        <li><a href = "#team">Команда</a></li>
+        <li><a href = "#menu">Меню</a></li>
+        <li><a href = "#panorams">Панорамный вид</a></li>
+        <li><a href = "#events">События</a></li>
+        <li><a href = "#interior">Интерьер</a></li>
+        <li><a href = "#addr">Адрес</a></li>
+        <li><a href = "">Блог</a></li>
+    </ul>
+    <a class = "menu__book" href = "javascript:void(0);">Забронировать столик</a>
+    <p class = "menu__addr">Смоленская ул., 8, Москва | 10:00 - 24:00<br/>+7 (495) 510-510-1 / +7 (495) 782-62-62 </p>
+    <div class = "menu__valet"></div>
+</div>
+
+<div class = "popup__form">
+    <a class = "hide__form" href = "javascript:void(0);"><img src = "images/cross.png" /></a>
+    <div class = "popup__form__wrapper">
+        <p class = "form__head">Зарезервировать столик</p>
+
+        <form action = "" method = "POST">
+            <div class = "popup__form__left">
+                <input type = "text" name = "name" placeholder = "Имя, Фамилия:"/>
+                <input type = "text" name = "date" class = "data__field" placeholder = "Дата визита: 29.10.18"/>
+                <input type = "text" name = "kolvo" placeholder = "Количество гостей: 2"/>
+            </div>
+            <div class = "popup__form__right">
+                <input type = "text" name = "phone" class = "phone__field" placeholder = "Ваш телефон:"/>
+                <input type = "text" name = "time" class = "time__field" placeholder = "Время визита: 19:00"/>
+                <input type = "text" name = "email" placeholder = "E-mail:"/>
+            </div>
+            <div class = "clear"></div>
+            <div class = "popup__form__subscribe">
+                <label><input type = "checkbox" name = "subscribe"/> подписаться на рассылку</label>
+            </div>
+            <input class = "send__book" type = "submit" value = "Зарезервировать столик"/>
+            <p class = "policy">* Все поля обязательны для заполнения. Нажима на кнопку “Зарезервировать”, вы даете согласие на обработку своих<br/>персональных данных. </p>
+            <p class = "menu__addr">Смоленская ул., 8, Москва | 10:00 - 24:00<br/>+7 (495) 510-510-1 / +7 (495) 782-62-62 </p>
+            <div class = "menu__valet"></div>
+        </form>
+
+    </div>
+</div>
+
+<div class = "screen1">
+    <img src="images/sahalin.jpg" class="advancedpanorama" width="2642" height="375" usemap="testmap" alt="Salle de formation" />
+    <div class = "wrapper">
+        <div class = "screen1__block top__left">
+            <a id = "nav-toggle" href = "javascript:void(0);"><span></span></a>
+            <ul class = "city__links">
+                <li><a class = "active" href = "">Москва</a></li>
+                <li><a href = "">Сочи</a></li>
+            </ul>
+            <ul class = "lang__links">
+                <li><a class = "active" href = "">РУ</a></li>
+                <li><a href = "">EN</a></li>
+                <li><a href = "">CH</a></li>
+            </ul>
+        </div>
+        <div class = "screen1__block top__center">
+            <div class = "logo"><img src = "images/logo.png"/></div>
+        </div>
+        <div class = "screen1__block top__right">
+            <div class = "top__right__btn">
+                <a class = "book" href = "javascript:void(0);">Бронировать</a>
+                <div class = "free__valet"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class = "screen2" id = "team">
+    <div class = "wrapper">
+        <div class = "star__team">
+            <div class = "star__team__photo"><img src = "images/copmpany.jpg" /></div>
+            <div class = "star__team__wrap star__team__wrap1">
+                <div class = "star__team__desc">
+                    <h2>Звездная команда</h2>
+                    <p>Каждый сезон Ресторан Сахалин открывает<br/>дегустационным сетом, в основе которого<br/>авторские рецепты и тонко продуманные<br/>сочетания изысканных морепродуктов, идеи,<br/>комбинации вкусов. Каждый сезон Ресторан<br/>Сахалин открывает дегустационным сетом,<br/>
+                        в основе которого авторские рецепты и тонко<br/>продуманные сочетания изысканных<br/>морепродуктов, идеи, комбинации вкусов.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "screen3" id = "menu">
+    <div id = "screen3__slider" class = "owl-carousel">
+        <div class = "item"><img src = "images/set.jpg" /></div>
+        <div class = "item"><img src = "images/set.jpg" /></div>
+        <div class = "item"><img src = "images/set.jpg" /></div>
+        <div class = "item"><img src = "images/set.jpg" /></div>
+        <div class = "item"><img src = "images/set.jpg" /></div>
+        <div class = "item"><img src = "images/set.jpg" /></div>
+        <div class = "item"><img src = "images/set.jpg" /></div>
+    </div>
+    <div class = "star__team__wrap star__team__wrap2">
+        <div class = "screen3__slider__nav ">
+            <a href = "javascript:void(0);"></a>
+            <a href = "javascript:void(0);"></a>
+        </div>
+        <div class = "star__team__desc1">
+            <div class = "slider__dots slider__dots1">
+                <a id = "screen3__dot1" class = "active" href = "javascript:void(0);"></a>
+                <a id = "screen3__dot2" href = "javascript:void(0);"></a>
+                <a id = "screen3__dot3" href = "javascript:void(0);"></a>
+                <a id = "screen3__dot4" href = "javascript:void(0);"></a>
+                <a id = "screen3__dot5" href = "javascript:void(0);"></a>
+                <a id = "screen3__dot6" href = "javascript:void(0);"></a>
+                <a id = "screen3__dot7" href = "javascript:void(0);"></a>
+            </div>
+            <h2>Высокая гастрономия</h2>
+            <p>Каждый сезон Ресторан Сахалин открывает<br/>дегустационным сетом, в основе которого авторские<br/>рецепты и тонко продуманные сочетания изысканных<br/>морепродуктов, идеи, комбинации вкусов. Каждый сезон<br/>Ресторан Сахалин открывает дегустационным сетом, в<br/>основе которого авторские рецепты и тонко<br/>продуманные сочетания изысканных морепродуктов,<br/>идеи, комбинации вкусов.</p>
+        </div>
+    </div>
+</section>
+
+<section class = "screen4" id = "panorams">
+    <img src="images/sahalin2.jpg" class="advancedpanorama day__panoram" width="2642" height="375" usemap="testmap" alt="Salle de formation" />
+    <img src="images/sahalin.jpg" class="advancedpanorama night__panoram" width="2642" height="375" usemap="testmap" alt="Salle de formation" />
+    <div class = "star__team__wrap star__team__wrap3">
+        <div class = "screen4__slider__nav ">
+            <a href = "javascript:void(0);"></a>
+            <a class = "fade__day" href = "javascript:void(0);">днем</a>
+            <a class = "fade__night" href = "javascript:void(0);">ночью</a>
+            <a href = "javascript:void(0);"></a>
+        </div>
+        <div class = "star__team__desc2 ">
+            <h2>Вся Москва на ладони</h2>
+            <p>Каждый сезон Ресторан Сахалин открывает<br>дегустационным сетом, в основе которого авторские<br/>рецепты и тонко продуманные сочетания изысканных<br/>морепродуктов, идеи, комбинации вкусов. Каждый сезон<br/>Ресторан Сахалин открывает дегустационным сетом, в<br/>основе которого авторские рецепты и тонко<br/>продуманные сочетания изысканных морепродуктов,<br/>идеи, комбинации вкусов.</p>
+        </div>
+    </div>
+</section>
+
+<section class = "screen6">
+    <h2>События</h2>
+    <div class = "wrapper">
+        <div id = "news__slider" class = "owl-carousel">
+            <div class = "item">
+                <div class = "news__item">
+                    <div class = "news__item__left"><img src = "images/event1.jpg" /></div>
+                    <div class = "news__item__right">
+                        <p class = "news__item__head">Новый дегустационный сет</p>
+                        <p class = "news__item__text">Russian Evolution – Эволюция русской кухни – тема нового гастрономического меню. Составляем образы по мотивам знаковых вещей 80-х.</p>
+                        <div class = "news__item__right__img"><img src = "images/event2.jpg" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class = "item">
+                <div class = "news__item">
+                    <div class = "news__item__left"><img src = "images/event1.jpg" /></div>
+                    <div class = "news__item__right">
+                        <p class = "news__item__head">Новый дегустационный сет</p>
+                        <p class = "news__item__text">Russian Evolution – Эволюция русской кухни – тема нового гастрономического меню. Составляем образы по мотивам знаковых вещей 80-х.</p>
+                        <div class = "news__item__right__img"><img src = "images/event2.jpg" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class = "item">
+                <div class = "news__item">
+                    <div class = "news__item__left"><img src = "images/event1.jpg" /></div>
+                    <div class = "news__item__right">
+                        <p class = "news__item__head">Новый дегустационный сет</p>
+                        <p class = "news__item__text">Russian Evolution – Эволюция русской кухни – тема нового гастрономического меню. Составляем образы по мотивам знаковых вещей 80-х.</p>
+                        <div class = "news__item__right__img"><img src = "images/event2.jpg" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class = "item">
+                <div class = "news__item">
+                    <div class = "news__item__left"><img src = "images/event1.jpg" /></div>
+                    <div class = "news__item__right">
+                        <p class = "news__item__head">Новый дегустационный сет</p>
+                        <p class = "news__item__text">Russian Evolution – Эволюция русской кухни – тема нового гастрономического меню. Составляем образы по мотивам знаковых вещей 80-х.</p>
+                        <div class = "news__item__right__img"><img src = "images/event2.jpg" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "screen5" id = "interior">
+    <div id = "screen5__slider" class = "owl-carousel">
+        <div class = "item"><img src = "images/interyer.jpg" /></div>
+        <div class = "item"><img src = "images/interyer.jpg" /></div>
+        <div class = "item"><img src = "images/interyer.jpg" /></div>
+        <div class = "item"><img src = "images/interyer.jpg" /></div>
+        <div class = "item"><img src = "images/interyer.jpg" /></div>
+        <div class = "item"><img src = "images/interyer.jpg" /></div>
+        <div class = "item"><img src = "images/interyer.jpg" /></div>
+    </div>
+    <div class = "star__team__wrap star__team__wrap4">
+        <div class = "screen5__slider__nav ">
+            <a href = "javascript:void(0);"></a>
+            <a href = "javascript:void(0);"></a>
+        </div>
+        <div class = "star__team__desc3">
+            <div class = "slider__dots slider__dots2">
+                <a id = "screen5__dot1" class = "active" href = "javascript:void(0);"></a>
+                <a id = "screen5__dot2" href = "javascript:void(0);"></a>
+                <a id = "screen5__dot3" href = "javascript:void(0);"></a>
+                <a id = "screen5__dot4" href = "javascript:void(0);"></a>
+                <a id = "screen5__dot5" href = "javascript:void(0);"></a>
+                <a id = "screen5__dot6" href = "javascript:void(0);"></a>
+                <a id = "screen5__dot7" href = "javascript:void(0);"></a>
+            </div>
+            <h2>Интерьер ресторана</h2>
+            <p>Каждый сезон Ресторан Сахалин открывает<br/>дегустационным сетом, в основе которого авторские<br/>рецепты и тонко продуманные сочетания изысканных<br/>морепродуктов, идеи, комбинации вкусов. Каждый сезон<br/>Ресторан Сахалин открывает дегустационным сетом, в<br/>основе которого авторские рецепты и тонко<br/>продуманные сочетания изысканных морепродуктов,<br/>идеи, комбинации вкусов.</p>
+        </div>
+    </div>
+    <div class = "wrapper">
+        <div class = "addr__bottom" id = "addr">
+            <h2>Адрес</h2>
+            <p>Смоленская ул., 8, Москва | 10:00 - 24:00  | +7 (495) 510-510-1 / +7 (495) 782-62-62 </p>
+        </div>
+    </div>
+</section>
+
+<section class = "ymaps"><a class = "show__map" popup-target = "map-pp" href = "javascript:void(0);">Открыть карту</a></section>
+
+<footer class = "footer">
+    <div class = "wrapper">
+        <ul class = "social">
+            <li><a href = ""><img src = "images/inst.png" /></a></li>
+            <li><a href = ""><img src = "images/fb.png"></a></li>
+        </ul>
+        <p class = "copyright">Copyright Сахалин, 2018. Разработка сайта <a target = "_blank" href = "http://www.colortime.ru/">COLORTIME</a>.</p>
+        <a id = "to__top" href = "javascript:void(0);"></a>
+    </div>
+</footer>
+
+<script type="text/javascript" src = "js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src = "js/jquery.panorama.js"></script>
+<script type="text/javascript" src = "plugins/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src = "js/maskedinput.js"></script>
+<script type="text/javascript" src = "js/script.js"></script>
+
+</body>
+</html>
